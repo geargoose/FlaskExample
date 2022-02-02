@@ -8,8 +8,8 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 
-def main():
-    app.run()
+def main(*args, **kwargs):
+    app.run(*args, **kwargs)
 
 
 if __name__ == '__main__':
