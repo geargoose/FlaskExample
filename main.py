@@ -1,14 +1,18 @@
 from flask import Flask
 
+a = "<p>Hello, World!</p>"
+
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return a
 
 
 def main(*args, **kwargs):
+    global a
+    a = "<p>Hello, Egor!</p>"
     app.run(*args, **kwargs)
 
 
