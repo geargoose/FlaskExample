@@ -10,6 +10,11 @@ def hello_world():
     return a
 
 
+@app.before_request
+def setup():
+    global a
+    a = "123"
+
+
 if __name__ == '__main__':
-    a = "<p>Hello, Egor!</p>"
     app.run()
