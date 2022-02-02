@@ -8,5 +8,9 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 
-if __name__ == '__main__':
+def main():
     app.run()
+
+
+if __name__ == '__main__':
+    main()
