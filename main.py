@@ -10,11 +10,6 @@ def hello_world():
     return a
 
 
-def main(*args, **kwargs):
-    global a
-    a = "<p>Hello, Egor!</p>"
-    app.run(*args, **kwargs)
-
-
 if __name__ == '__main__':
-    main()
+    a = "<p>Hello, Egor!</p>"
+    app.run()
